@@ -22,9 +22,10 @@ input_data = np.array([feature1,feature2,feature3,feature4,feature5])
 input_data = input_data.reshape(1, -1)
 
 st.write('Prediction')
-if st.button('prediction') is not None:
+if st.button('predict'):
     prediction = model.predict(input_data)
     st.write(f"The price {prediction[0]}")
+
 
 
 
